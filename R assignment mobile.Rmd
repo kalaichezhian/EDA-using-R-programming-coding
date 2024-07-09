@@ -1,0 +1,48 @@
+---
+title: "Untitled"
+author: "STUDENT"
+date: "2024-07-09"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+ggplot(mobile, aes(x = Selling.Price)) + 
+  geom_histogram(binwidth = 10, fill = "blue", color = "black") +
+  theme_minimal()
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r}
+ggplot(mobile, aes(x =Original.Price )) + 
+  geom_histogram(binwidth = 10, fill = "brown", color = "black") +
+  theme_minimal()
+```
+
+```{r models}
+ggplot(mobile, aes(x = Models, y = Original.Price)) + 
+  geom_boxplot(fill = "purple", color = "pink") +
+  theme_minimal()
+```
+```{r}
+ggplot(mobile, aes(x =Selling.Price, y = Original.Price)) + 
+  geom_point(color = "blue") +
+  theme_minimal()
+```
+```{r}
+ggplot(mobile, aes(x = Selling.Price, y =Discount)) + 
+  geom_point(color = "red") +
+  theme_minimal()
+```
